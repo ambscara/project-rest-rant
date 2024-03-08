@@ -5,14 +5,21 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>home</h1>
-                <a href="/places">
-                 <button className="btn-primary">Places Page</button>
-               </a>
+    <h1>HOME</h1>
+    <div>
+      <img src="public/images/ChaiIceCream.jpg"  alt="Chia Fruit Shake" />
+     <div>
+        Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
+      </div>
+    </div>
+    <a href="/places">
+        <button className="btn-primary">Places Page</button>
+    </a>
+</main>
+</Def>
 
-            </main>
-        </Def>
     )
 }
+
 
 module.exports = home
