@@ -23,7 +23,16 @@ function Def (html) {
                     </ul>
                 </nav>
                 {html.children}
+                <script>
+               document.getElementById('copyright-year').innerText = 
+                  new Date().getFullYear();
+                </script>
             </body>
+            <footer class="footer bg-dark">
+    <div class="container">
+      <p>Copyright <span id="copyright-year"></span>Amber Eakins</p>
+    </div>
+  </footer>
         </html>
     )
 }
