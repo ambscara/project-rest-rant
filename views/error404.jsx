@@ -7,7 +7,7 @@ function error404 () {
           <main>
               <h1>404: PAGE NOT FOUND</h1>
               <div>
-              <img src="public/images/cyrus-chew-Dl39g6QhOIM-unsplash.jpg" alt="Angry Cat"/>
+              <img src="public/images/cyrus-chew-Dl39g6QhOIM-unsplash (1).jpg" alt="Angry Cat"/>
               </div>
               <div>
                 Photo by <a href="AUTHOR_LINK">Cyrus Chew</a> on <a href="UNSPLASH_LINK">Unsplash</a>
