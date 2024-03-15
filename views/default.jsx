@@ -29,7 +29,7 @@ function Def (html) {
                 </script>
             </body>
             <footer class="footer bg-dark">
-    <div class="container">
+    <div className="container">
       <p>Copyright <span id="copyright-year"></span>Amber Eakins</p>
     </div>
   </footer>
