@@ -21,10 +21,20 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
+router.get('/', (req, res) => {
+  let places = [{
+      name: 'H-Thai-ML',
+      city: 'Seattle',
+      state: 'WA',
+      cuisines: 'Thai, Pan-Asian',
+      pic: 'public/images/max-griss-otLqpb9LK70-unsplash (1) copy.jpg'
+
+    },
+
 
 router.get('/new', (req, res) => {
   res.render('places/new')
-  })
+  }),
   
   router.get('/:id', (req, res) => {
     let id = Number(req.params.id)
@@ -35,18 +45,9 @@ router.get('/new', (req, res) => {
       res.render('error404')
     }
     res.render('places/show', { places: places[id], id })
-  })
+  }),
   
-  
-router.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: 'public/images/max-griss-otLqpb9LK70-unsplash (1) copy.jpg'
-
-      }, {
+   {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
@@ -87,18 +88,6 @@ router.get('/:id/edit', (req, res) => {
 })
 
 // PUT
-router.put('/:id', (req, res) => {
-  let id = Number(req.params.id)
-  if (isNaN(id)) {
-      res.render('error404')
-  }
-  else if (!places[id]) {
-      res.render('error404')
-  }
-  else {
-      res.redirect(`/places/${id}`)
-  }
-})
 
 router.put('/:id', (req, res) => {
   let id = Number(req.params.id)
