@@ -7,10 +7,19 @@ function show (data) {
             <main className="container">
                 <div className="row">
                     <div className="col-md-6">
+                        <img src={data.place.pic} alt={data.place.name}/>
+                        <h3>
+                            Located in {data.place.city}, {data.place.state}
+                        </h3>
                         <h1>{data.place.name}</h1>
                         <p>City: {data.place.city}</p>
                         <p>State: {data.place.state}</p>
-                        <h3>Available Cuisines:</h3>
+                        <h3>
+                            {data.place.showEstablished()}
+                        </h3>
+                        <h4>
+                            Serving {data.place.cuisines}
+                        </h4>
                         <ul>
                             {data.place.cuisines.map((cuisine, index) => (
                                 <li key={index}>{cuisine}</li>
